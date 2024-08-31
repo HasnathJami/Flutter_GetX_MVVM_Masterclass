@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_mvvm_masterclass/res/assets/image_assets.dart';
 import 'package:flutter_getx_mvvm_masterclass/utils/utils.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -17,10 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
       appBar: AppBar(
         title: Text('email_hint'.tr),
       ),
-      body: Container(
-        child: Center(
-          child: Text("GETX MVVM"),
-        ),
+      body: Image(
+        image: AssetImage(ImageAssets.splashScreenImagePath),
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
         // Utils.showToastMessage("Hello", ToastGravity.CENTER);
