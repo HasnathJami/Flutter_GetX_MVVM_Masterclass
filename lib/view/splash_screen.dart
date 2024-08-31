@@ -14,7 +14,11 @@ class _SplashScreenState extends State<SplashScreen> {
       appBar: AppBar(
         title: Text('Exception Handling'),
       ),
-      body: Container(),
+      body: Container(
+        child: Center(
+          child: Text("GETX MVVM"),
+        ),
+      ),
     );
   }
 }
