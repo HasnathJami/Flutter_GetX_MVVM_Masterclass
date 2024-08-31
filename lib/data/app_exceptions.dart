@@ -16,3 +16,11 @@ class InternetException extends AppExceptions {
 class RequestTimeOut extends AppExceptions {
   RequestTimeOut([String? message]) : super(message, 'Request Time Out');
 }
+
+class InvalidUrlException extends AppExceptions {
+  InvalidUrlException([String? message]) : super(message, 'Invalid Url');
+}
+
+class FetchDataException extends AppExceptions {
+  FetchDataException([String? message]) : super(message, '');
+}
