@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_mvvm_masterclass/utils/utils.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,6 +21,9 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Text("GETX MVVM"),
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        // Utils.showToastMessage("Hello", ToastGravity.CENTER);
+      }),
     );
   }
 }
