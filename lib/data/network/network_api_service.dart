@@ -48,6 +48,9 @@ class NetworkApiService extends BaseApiService {
       throw RequestTimeOut('');
     }
 
+    if (kDebugMode) {
+      print(responseJson);
+    }
     return responseJson;
   }
 
@@ -56,7 +59,8 @@ class NetworkApiService extends BaseApiService {
       case 200:
         return jsonDecode(response.body);
       case 400:
-        throw InvalidUrlException;
+        // throw InvalidUrlException;
+        return jsonDecode(response.body);
       default:
         throw FetchDataException(
             'Error occurred while communication with server');
