@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_mvvm_masterclass/localization/languages.dart';
 import 'package:flutter_getx_mvvm_masterclass/res/routes/routes.dart';
+import 'package:flutter_getx_mvvm_masterclass/view/login/login_view.dart';
 import 'package:flutter_getx_mvvm_masterclass/view/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'GetX Mvvm',
       translations: Languages(),
-      locale: Locale('bn', 'BD'),
+      locale: Locale('en', 'US'),
       fallbackLocale: Locale('en', 'US'),
-      home: SplashScreen(),
+      home: LoginView(),
       getPages: AppRoutes.appRoutes(),
     );
   }
